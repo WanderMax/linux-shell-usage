@@ -1,0 +1,6 @@
+grep "Parameterized " *.pdf -a -l | xargs -n1 -I {} cp {} /nas1/
+  复制含有 "Parameterized " 的PDF到指定目录
+
+grep -E -a  "default\">.*" *.pdf | grep -E -o ">(.*)<" | grep -E -o "[ \'a-zA-Z0-9\-]+"
+<rdf:li xml:lang="x-default">Virtuoso Parameterized Cell Reference</rdf:li> --> PDF 标题样式
+搜索指定PDF文件中标题
